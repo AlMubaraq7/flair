@@ -1,0 +1,14 @@
+.c-group {
+  background-image: linear-gradient(180deg, hsl(0, 0%, 8%, 0.9), hsl(0, 0%, 8%)),
+    url(../../../assets/Home/classes.jpg);
+  background-size: cover;
+}
+.classes {
+  padding: 3rem 40px;
+  height: fit-content;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 2rem;
+  }
+}

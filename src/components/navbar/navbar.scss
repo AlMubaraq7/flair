@@ -1,0 +1,58 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  color: var(--white);
+  background-color: var(--black);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  &-logo {
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+  }
+  &-link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family: "Raleway", sans-serif;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        height: 6px;
+        width: 6px;
+        bottom: -10px;
+        left: 50%;
+        border-radius: 50%;
+        background-color: var(--primary);
+        opacity: 0;
+        transition: 500ms ease-in-out;
+      }
+      &:hover::before {
+        opacity: 1;
+      }
+    }
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  .progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    width: 100%;
+    transform-origin: 50%;
+    background-color: var(--primary);
+  }
+}

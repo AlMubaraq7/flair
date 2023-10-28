@@ -1,0 +1,48 @@
+.hero {
+  display: flex;
+  padding: 0px 40px;
+  background-color: var(--black);
+  color: var(--white);
+  height: calc(100vh + 90px);
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-around;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &-text {
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    & > h1 {
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 40px;
+      position: relative;
+      &::before {
+        content: "";
+        left: 10px;
+        top: 22px;
+        transform: rotate(90deg);
+        height: 5px;
+        width: 30px;
+        background-color: var(--primary);
+        position: absolute;
+      }
+    }
+    & > span {
+      font-size: 20px;
+      font-weight: 200;
+      margin-left: 20px;
+    }
+  }
+  &-cta {
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+  &-image {
+    width: 120%;
+    z-index: 1;
+    margin-top: 25px;
+  }
+}

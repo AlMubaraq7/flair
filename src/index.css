@@ -1,0 +1,39 @@
+:root {
+  --black: hsl(0, 0%, 6%);
+  --white: #f9fafb;
+  --primary: #ff3333;
+  --secondary: #696969;
+  /* #ff3333 #22262a*/
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 4px;
+  background: var(--black);
+  -webkit-border-radius: 1em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  -webkit-border-radius: 1em;
+}
+
+::-webkit-scrollbar-corner {
+  background: #fff3;
+}
