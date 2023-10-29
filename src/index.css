@@ -2,13 +2,12 @@
   --black: hsl(0, 0%, 6%);
   --white: #f9fafb;
   --primary: #ff3333;
-  --secondary: #696969;
-  /* #ff3333 #22262a*/
 }
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -24,16 +23,29 @@ h3 {
   font-family: "Montserrat", sans-serif;
 }
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 10px;
   background: var(--black);
   -webkit-border-radius: 1em;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary);
-  -webkit-border-radius: 1em;
+  background-color: color-mix(
+    in hsl shorter hue,
+    var(--primary) 80%,
+    var(--black) 20%
+  );
+  background-clip: padding-box;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #969595;
+  background-clip: padding-box;
+  border: 3px solid rgba(0, 0, 0, 0);
 }
 
-::-webkit-scrollbar-corner {
-  background: #fff3;
+::-webkit-scrollbar-track {
+  background: var(--white);
+  padding: 1rem;
+  width: 15px;
 }

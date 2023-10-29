@@ -1,0 +1,61 @@
+.tc-group {
+  height: 400px;
+  min-width: 250px;
+  border-radius: 20px;
+  position: relative;
+  background-color: var(--white);
+  box-shadow: 0px 3px 0.3rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-color: #f9f9f9;
+  z-index: -3;
+  &__image {
+    .image-bg {
+      filter: saturate(-20);
+      height: 300px;
+      width: 300px;
+      top: 4rem;
+      left: 3.5rem;
+      position: absolute;
+      z-index: -2;
+    }
+    .image-main {
+      position: absolute;
+      width: 250px;
+      left: 4.5rem;
+      filter: grayscale(5);
+      transition: filter 300ms ease-out;
+      &:hover {
+        filter: none;
+      }
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--white);
+    background-color: #f9f9f9;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 10rem;
+    z-index: 0;
+    &__stroke {
+      position: absolute;
+      height: 9rem;
+      transform: scale(1.2);
+      width: 18rem;
+      top: -1.5rem;
+      z-index: -1;
+      filter: hue-rotate(-5deg);
+      &--specialty {
+        top: 3.5rem;
+        width: 12rem;
+        filter: sepia(10);
+      }
+    }
+  }
+}

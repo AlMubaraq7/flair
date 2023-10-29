@@ -1,4 +1,3 @@
-import CustomButton from "../../../components/CustomButton/CustomButton";
 import "./whoweare.scss";
 import { motion } from "framer-motion";
 const WhoWeAre = () => {
@@ -65,7 +64,6 @@ const WhoWeAre = () => {
               new achievements, Flair Gym is the place where your fitness story
               begins.
             </motion.p>
-            <CustomButton>Take a Tour</CustomButton>
           </motion.div>
         </motion.div>
       </div>

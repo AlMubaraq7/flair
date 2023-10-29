@@ -25,20 +25,9 @@
       letter-spacing: 1px;
       font-family: "Raleway", sans-serif;
       position: relative;
-      &::before {
-        content: "";
-        position: absolute;
-        height: 6px;
-        width: 6px;
-        bottom: -10px;
-        left: 50%;
-        border-radius: 50%;
-        background-color: var(--primary);
-        opacity: 0;
-        transition: 500ms ease-in-out;
-      }
-      &:hover::before {
-        opacity: 1;
+      &:hover {
+        color: var(--primary);
+        transition: 400ms ease-out;
       }
     }
     &:not(:last-child) {
@@ -47,12 +36,12 @@
   }
   .progress-bar {
     position: absolute;
-    bottom: 0;
+    bottom: 3px;
     left: 0;
     right: 0;
-    height: 3px;
+    height: 2px;
     width: 100%;
     transform-origin: 50%;
-    background-color: var(--primary);
+    background-color: var(--white);
   }
 }

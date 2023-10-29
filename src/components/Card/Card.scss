@@ -17,6 +17,7 @@
   object-fit: cover;
   max-width: 100%;
   height: 100%;
+  filter: none;
 }
 
 .card__content {
@@ -125,6 +126,7 @@
   .card:hover .card__background,
   .card:focus-within .card__background {
     transform: scale(1.3);
+    filter: grayscale(10);
   }
 
   .card:hover .card__content--container > :not(.card__title),

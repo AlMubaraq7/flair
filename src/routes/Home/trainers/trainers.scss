@@ -1,0 +1,22 @@
+.trainers-group {
+  height: 100vh;
+  background-image: url(../../../assets/Home/trainer-bg.jpg);
+  background-size: cover;
+  .trainers {
+    display: flex;
+    align-items: center;
+    padding: 5rem;
+    overflow-x: hidden;
+  }
+}
+// SWIPER STYLES
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--primary);
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--primary);
+}
+.swiper-horizontal {
+  padding: 2.5rem 0;
+}
