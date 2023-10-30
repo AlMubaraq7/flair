@@ -3,6 +3,7 @@ import Hero from "./hero/hero";
 import WhoWeAre from "./whoweare/whoweare";
 import Classes from "./classes/classes";
 import Trainers from "./trainers/trainers";
+import Testimonials from "./testimonials/testimonials";
 function Homepage() {
   return (
     <>
@@ -10,6 +11,7 @@ function Homepage() {
       <WhoWeAre />
       <Classes />
       <Trainers />
+      <Testimonials />
     </>
   );
 }

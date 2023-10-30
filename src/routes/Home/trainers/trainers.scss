@@ -1,7 +1,9 @@
 .trainers-group {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(../../../assets/Home/trainer-bg.jpg);
   background-size: cover;
+  padding: 0rem;
+  padding-bottom: 5rem;
   .trainers {
     display: flex;
     align-items: center;
@@ -12,11 +14,16 @@
 // SWIPER STYLES
 .swiper-button-prev,
 .swiper-button-next {
-  color: var(--primary);
+  filter: grayscale(5);
+  width: 10px;
+  &:hover {
+    color: #df2929;
+    filter: none;
+  }
 }
 .swiper-pagination-bullet-active {
   background-color: var(--primary);
 }
 .swiper-horizontal {
-  padding: 2.5rem 0;
+  padding: 3rem 0;
 }
