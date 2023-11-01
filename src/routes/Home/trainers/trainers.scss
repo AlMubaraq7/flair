@@ -10,6 +10,14 @@
     padding: 5rem;
     overflow-x: hidden;
   }
+  & > h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 5rem auto;
+    margin-bottom: 3rem;
+    position: relative;
+  }
 }
 // SWIPER STYLES
 .swiper-button-prev,

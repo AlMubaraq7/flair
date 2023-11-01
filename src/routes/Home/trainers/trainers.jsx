@@ -10,6 +10,7 @@ const Trainers = () => {
       <div className="title">
         <h1>Gym Trainers</h1>
       </div>
+      <h1>Meet our team of experts</h1>
       <section className="trainers">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}

@@ -1,6 +1,5 @@
 .title {
   background-color: var(--primary);
-  // min-width: 30vw;
   width: 350px;
   margin-right: auto;
   text-align: center;
@@ -26,7 +25,6 @@
     place-items: center;
     &-content {
       position: relative;
-      flex: 1 1 auto;
       & > h2 {
         font-size: 2rem;
         &::before {
