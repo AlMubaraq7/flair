@@ -27,7 +27,7 @@ const Testimonials = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Repellendus excepturi quaerat placeat, veniam aliqui.
             </div>
-            <h3>Jane Reo</h3>
+            <h3>Jane Roe</h3>
           </div>
           <div className="testimonials__box">
             <div className="image-container">

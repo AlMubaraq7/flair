@@ -46,14 +46,14 @@
 
     &__stroke {
       position: absolute;
-      height: 9rem;
+      height: 10rem;
       transform: scale(1.2);
       width: 18rem;
-      top: -1.5rem;
+      top: -2rem;
       z-index: -1;
       filter: hue-rotate(-5deg);
       &--specialty {
-        top: 1.8rem;
+        top: 1.3rem;
         width: 12rem;
         filter: sepia(10);
       }
