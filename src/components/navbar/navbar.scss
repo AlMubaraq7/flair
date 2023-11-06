@@ -44,4 +44,61 @@
     transform-origin: 50%;
     background-color: var(--white);
   }
+  .hamburger {
+    display: none;
+    &:hover {
+      & ~ .bar {
+        background-color: var(--primary);
+      }
+    }
+    .bar {
+      height: 3px;
+      width: 35px;
+      background-color: var(--white);
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .nav {
+    .nav-links {
+      position: fixed;
+      top: 5rem;
+      text-align: center;
+      left: -100%;
+      opacity: 0;
+      transition: 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 100%;
+      height: 100%;
+      background-color: var(--black);
+    }
+    .nav--active {
+      left: 0;
+      opacity: 1;
+    }
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      cursor: pointer;
+      margin-right: 1rem;
+      .bar {
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+    .hamburger--active {
+      .bar:nth-child(2) {
+        opacity: 0;
+      }
+      .bar:nth-child(1) {
+        transform: translateY(11px) rotate(45deg);
+      }
+      .bar:nth-child(3) {
+        transform: translateY(-11px) rotate(-45deg);
+      }
+    }
+  }
 }

@@ -11,8 +11,6 @@
   background-repeat: no-repeat;
 
   &-text {
-    justify-content: center;
-    align-items: center;
     letter-spacing: 1px;
     & > h1 {
       text-transform: uppercase;
@@ -44,5 +42,52 @@
     width: 120%;
     z-index: 1;
     margin-top: 25px;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .hero {
+    &-text {
+      & > h1 {
+        font-size: 35px;
+        white-space: nowrap;
+        &::before {
+          width: 25px;
+          top: 1.15rem;
+          left: 0;
+          transform: translateX(5%) rotate(90deg);
+        }
+      }
+      & > span {
+        font-size: 16px;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+@media all and (max-width: 1000px) {
+  .hero {
+    &-text {
+      & > h1 {
+        font-size: 28px;
+        white-space: nowrap;
+        &::before {
+          width: 23px;
+          top: 0.9rem;
+          left: 0;
+          transform: translateX(-40%) rotate(90deg);
+        }
+      }
+      & > span {
+        font-size: 12px;
+        font-weight: 300;
+        white-space: nowrap;
+      }
+    }
+    &-image {
+      width: 115%;
+      margin-top: 3rem;
+      margin-left: 2rem;
+    }
   }
 }
